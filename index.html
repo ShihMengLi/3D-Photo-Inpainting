@@ -40,12 +40,11 @@
       <br><br>
 
       <p style="text-align:center;">
-        <a href="http://nthu-en.web.nthu.edu.tw/bin/home.php" target="_blank"><img height="100"
-                                                                                   src="./ICCV2019/nthu.png"></a>
+        <a href="http://nthu-en.web.nthu.edu.tw/bin/home.php" target="_blank"><img height="100" src="./CVPR2020/nthu.png"></a>
         &emsp;
-        <a href="https://vt.edu/" target="_blank"><img height="100" src="./ICCV2019/vtv.png"></a>
+        <a href="https://vt.edu/" target="_blank"><img height="100" src="./CVPR2020/vt.png"></a>
         &emsp;
-        <a href="https://research.fb.com/" target="_blank"><img height="100" src="./ICCV2019/facebook.png"></a>
+        <a href="https://research.fb.com/" target="_blank"><img height="100" src="./CVPR2020/facebook.png"></a>
       </p>
     </div>
   </div>
@@ -54,41 +53,42 @@
 <div class="container-fluid" id="teaser">
   <div class="row">
     <p style="text-align:center;">
-      <img height="400" src="./ICCV2019/3dt.gif">
+      <img height="400" src="./CVPR2020/3dt.gif">
     </p>
   </div>
 </div>
 
 <div class="container" id="abstract">
   <h2>Abstract</h2>
-  Vehicle 3D extents and trajectories are critical cues for predicting the future location of vehicles and planning
-  future agent ego-motion based on those predictions. In this paper, we propose a novel online framework for 3D vehicle
-  detection and tracking from monocular videos. The framework can not only associate detections of vehicles in motion
-  over time, but also estimate their complete 3D bounding box information from a sequence of 2D images captured on a
-  moving platform. Our method leverages 3D box depth-ordering matching for robust instance association and utilizes 3D
-  trajectory prediction for re-identification of occluded vehicles. We also design a motion learning module based on an
-  LSTM for more accurate long-term motion extrapolation. Our experiments on a simulation dataset and the KITTI tracking
-  dataset show that our 3D tracking pipeline offers robust data association and tracking.
+  We propose a method for converting a single RGB-D input image into a 3D photo, i.e., a multi-layer representation 
+  for novel view synthesis that contains hallucinated color and depth structures in regions occluded in the original 
+  view. We use a Layered Depth Image with explicit pixel connectivity as underlying representation, and present a 
+  learning-based inpainting model that iteratively synthesizes new local color-and-depth content into the occluded 
+  region in a spatial context-aware manner. The resulting 3D photos can be efficiently rendered with motion parallax 
+  using standard graphics engines. We validate the effectiveness of our method on a wide range of challenging everyday 
+  scenes and show less artifacts when compared with the state-of-the-arts.
+
 </div>
 
 <div class="container" id="video">
   <h2>Video Overview</h2>
   <p style="text-align:center;">
-    <iframe allowfullscreen frameborder="0" height="400" src="https://www.youtube.com/embed/EJAtOCKI31g"
-            width="750"></iframe>
+    Comming Soon
+    <!--<iframe allowfullscreen frameborder="0" height="400" src="https://www.youtube.com/embed/EJAtOCKI31g"
+            width="750"></iframe>-->
   </p>
 </div>
 
 <div class="container" id="dataset">
-  <h2>Code & Dataset</h2>
-  <!--    <p style="text-align:center;"> <img src="./ICCV2019/sports-360.png" width="100%"></p>-->
-  <p>Following resources are provided:</p>
+  <h2>Links</h2>
+  <!--    <p style="text-align:center;"> <img src="./CVPR2020/sports-360.png" width="100%"></p>-->
+  <!--<p>Following resources are provided:</p>-->
   <div class="row" style="alignment: center">
     <div class="col-sm-3"></div>
     <div class="col-sm-3">
       <a href="https://github.com/ucbdrive/3d-vehicle-tracking" target="_blank">
         <p style="text-align:center;">
-          <img src="./ICCV2019/github.png"><br>
+          <img src="./CVPR2020/github.png"><br>
           Code (GitHub)</p>
       </a>
     </div>
@@ -97,7 +97,7 @@
       <a href="https://github.com/ucbdrive/3d-vehicle-tracking/blob/master/3d-tracking/README.md#data-preparation"
          target="_blank">
         <p style="text-align:center;">
-          <img src="./ICCV2019/zip.png"><br>
+          <img src="./CVPR2020/zip.png"><br>
           GTA dataset (Train, Val, Test)</p>
       </a>
     </div>
@@ -106,33 +106,31 @@
 </div>
 
 <div class="container" id="paper">
-  <h2>ICCV 2019</h2>
-  <p>Joint Monocular 3D Vehicle Detection and Tracking</p>
-  <a href="https://eborboihuc.github.io/" target="_blank">Hou-Ning Hu</a>,
-  <a href="#header" target="_blank">Qizhi Cai</a>,
-  <a href="https://dequan.wang/" target="_blank">Dequan Wang</a>,
-  <a href="https://linji.me/" target="_blank">Ji Lin</a>,
-  <a href="https://aliensunmin.github.io/" target="_blank">Min Sun</a>,
-  <a href="https://www.philkr.net/" target="_blank">Philipp Krähenbühl</a>,
-  <a href="https://people.eecs.berkeley.edu/~trevor/" target="_blank">Trevor Darrell</a>,
-  <a href="https://www.yf.io/" target="_blank">Fisher Yu</a>
+  <h2>CVPR 2020</h2>
+  <p>3D Photography using Context-aware Layered Depth Inpainting</p>
+  <a href="https://ShihMengLi.github.io/" target="_blank">Meng-Li Shih</a>,
+  <a href="https://lemonatsu.github.io/" target="_blank">Shih-Yang Su</a>,
+  <a href="https://johanneskopf.de/" target="_blank">Johannes Kopf</a>,
+  <a href="https://filebox.ece.vt.edu/~jbhuang/" target="_blank">Jia-Bin Huang</a>,
+
+
 
   <a href="https://drive.google.com/file/d/1qzYH4l0zJZXXz7eqgniaXrKS4F4FhYMC/view" target="_blank">
     <div class="thumbs">
-      <img src="./ICCV2019/thumbs-0.png">
-      <img src="./ICCV2019/thumbs-1.png">
-      <img src="./ICCV2019/thumbs-2.png">
-      <img src="./ICCV2019/thumbs-3.png">
-      <img src="./ICCV2019/thumbs-4.png">
-      <img src="./ICCV2019/thumbs-5.png">
-      <img src="./ICCV2019/thumbs-6.png">
-      <img src="./ICCV2019/thumbs-7.png">
-      <img src="./ICCV2019/thumbs-8.png">
-      <img src="./ICCV2019/thumbs-10.png">
-      <img src="./ICCV2019/thumbs-11.png">
-      <img src="./ICCV2019/thumbs-12.png">
-      <img src="./ICCV2019/thumbs-13.png">
-      <img src="./ICCV2019/thumbs-15.png">
+      <img src="./CVPR2020/thumbs-0.png">
+      <img src="./CVPR2020/thumbs-1.png">
+      <img src="./CVPR2020/thumbs-2.png">
+      <img src="./CVPR2020/thumbs-3.png">
+      <img src="./CVPR2020/thumbs-4.png">
+      <img src="./CVPR2020/thumbs-5.png">
+      <img src="./CVPR2020/thumbs-6.png">
+      <img src="./CVPR2020/thumbs-7.png">
+      <img src="./CVPR2020/thumbs-8.png">
+      <img src="./CVPR2020/thumbs-10.png">
+      <img src="./CVPR2020/thumbs-11.png">
+      <img src="./CVPR2020/thumbs-12.png">
+      <img src="./CVPR2020/thumbs-13.png">
+      <img src="./CVPR2020/thumbs-15.png">
     </div>
   </a>
   <div>
@@ -152,7 +150,7 @@
     <div class="col-sm-3">
       <a href="https://drive.google.com/file/d/1qzYH4l0zJZXXz7eqgniaXrKS4F4FhYMC/view" target="_blank">
         <p style="text-align:center;">
-          <img src="./ICCV2019/pdf.png"><br>
+          <img src="./CVPR2020/pdf.png"><br>
           Paper (High-resolution)</p>
       </a>
     </div>
@@ -160,7 +158,7 @@
     <div class="col-sm-2">
       <a href="https://drive.google.com/file/d/1wNVOPg2dmjh6FMLa9b3X-8Bvb2DaRzOx/view" target="_blank">
         <p style="text-align:center;">
-          <img src="./ICCV2019/pdf.png"><br>
+          <img src="./CVPR2020/pdf.png"><br>
           Supplementary (High-resolution)</p>
       </a>
     </div>
@@ -168,7 +166,7 @@
     <div class="col-sm-3">
       <a href="https://arxiv.org/abs/1811.10742" target="_blank">
         <p style="text-align:center;">
-          <img src="./ICCV2019/pdf.png"><br>
+          <img src="./CVPR2020/pdf.png"><br>
           Paper (ArXiv)</p>
       </a>
     </div>
@@ -180,13 +178,13 @@
     <h2>Acknowledgements</h2>
     <p style="text-align:center;">
       <a href="https://www.most.gov.tw/en/public" target="_blank">
-        <img height="100" src="./ICCV2019/most.jpg">
+        <img height="100" src="./CVPR2020/most.jpg">
       </a>
       <a href="https://deepdrive.berkeley.edu/" target="_blank">
-        <img height="50" src="./ICCV2019/bdd.png">
+        <img height="50" src="./CVPR2020/bdd.png">
       </a>
       <a href="https://bair.berkeley.edu/" target="_blank">
-        <img height="50" src="./ICCV2019/bair.png">
+        <img height="50" src="./CVPR2020/bair.png">
       </a>
     </p>
   </div>
