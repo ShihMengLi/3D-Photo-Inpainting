@@ -310,7 +310,7 @@
 <script src="./asset/bootstrap.min.js"></script>
 <script src="./Ckin-Video-Player/dist/js/ckin.js"></script>
 <script async="" src="./asset/analytics.js"></script>
-<script>document.getElementById("current_video").play();</script>
+<!-- <script></script> -->
 <script>
   (function (i, s, o, g, r, a, m) {
       i['GoogleAnalyticsObject'] = r;
@@ -342,6 +342,7 @@
     var i;
     var slides = document.getElementsByClassName("mySlides");
     var dots = document.getElementsByClassName("dot");
+    document.getElementById("current_video").play();
     if (n > slides.length) {slideIndex = 1}    
     if (n < 1) {slideIndex = slides.length}
     for (i = 0; i < slides.length; i++) {
