@@ -67,41 +67,41 @@
   <div class="slideshow-container">
     <!-- Full-width images with number and caption text -->
     <div class="mySlides fade">
-      <!-- <video id="current_video" width="720" controls="controls autoplay" muted="muted" onended="this.currentTime = 0; this.play();" -->
-      <video id="current_video00" controls="controls autoplay" muted="muted" onended="this.currentTime = 0; this.play();" src="./CVPR2020/family_00.mp4" style="height:500px"></video>
+      <!-- <video id="current_video" width="720" muted="muted" onended="this.currentTime = 0; this.play();" -->
+      <video id="current_video00" muted="muted" onended="this.currentTime = 0; this.play();" src="./CVPR2020/family_00.mp4" style="height:500px"></video>
     </div>
     <div class="mySlides fade">
-      <video id="current_video01" controls="controls autoplay" muted="muted" onended="this.currentTime = 0; this.play();" src="./CVPR2020/family_01.mp4" style="height:500px"></video>
+      <video id="current_video01" muted="muted" onended="this.currentTime = 0; this.play();" src="./CVPR2020/family_01.mp4" style="height:500px"></video>
     </div>
     <div class="mySlides fade">
-      <video id="current_video02" controls="controls autoplay" muted="muted" onended="this.currentTime = 0; this.play();" src="./CVPR2020/historical_00.mp4" style="height:500px"></video>
+      <video id="current_video02" muted="muted" onended="this.currentTime = 0; this.play();" src="./CVPR2020/historical_00.mp4" style="height:500px"></video>
     </div>
     <div class="mySlides fade">
-      <video id="current_video03" controls="controls autoplay" muted="muted" onended="this.currentTime = 0; this.play();" src="./CVPR2020/historical_01.mp4" style="height:500px"></video>
+      <video id="current_video03" muted="muted" onended="this.currentTime = 0; this.play();" src="./CVPR2020/historical_01.mp4" style="height:500px"></video>
     </div>
     <div class="mySlides fade">
-      <video id="current_video04" controls="controls autoplay" muted="muted" onended="this.currentTime = 0; this.play();" src="./CVPR2020/historical_02.mp4" style="height:500px"></video>
+      <video id="current_video04" muted="muted" onended="this.currentTime = 0; this.play();" src="./CVPR2020/historical_02.mp4" style="height:500px"></video>
     </div>
     <div class="mySlides fade">
-      <video id="current_video05" controls="controls autoplay" muted="muted" onended="this.currentTime = 0; this.play();" src="./CVPR2020/ken_00.mp4" style="height:500px"></video>
+      <video id="current_video05" muted="muted" onended="this.currentTime = 0; this.play();" src="./CVPR2020/ken_00.mp4" style="height:500px"></video>
     </div>    
     <div class="mySlides fade">
-      <video id="current_video06" controls="controls autoplay" muted="muted" onended="this.currentTime = 0; this.play();" src="./CVPR2020/ken_01.mp4" style="height:500px"></video>
+      <video id="current_video06" muted="muted" onended="this.currentTime = 0; this.play();" src="./CVPR2020/ken_01.mp4" style="height:500px"></video>
     </div>    
     <div class="mySlides fade">
-      <video id="current_video07" controls="controls autoplay" muted="muted" onended="this.currentTime = 0; this.play();" src="./CVPR2020/ken_02.mp4" style="height:500px"></video>
+      <video id="current_video07" muted="muted" onended="this.currentTime = 0; this.play();" src="./CVPR2020/ken_02.mp4" style="height:500px"></video>
     </div>    
     <div class="mySlides fade">
-      <video id="current_video08" controls="controls autoplay" muted="muted" onended="this.currentTime = 0; this.play();" src="./CVPR2020/ken_03.mp4" style="height:500px"></video>
+      <video id="current_video08" muted="muted" onended="this.currentTime = 0; this.play();" src="./CVPR2020/ken_03.mp4" style="height:500px"></video>
     </div>    
     <div class="mySlides fade">
-      <video id="current_video09" controls="controls autoplay" muted="muted" onended="this.currentTime = 0; this.play();" src="./CVPR2020/ken_04.mp4" style="height:500px"></video>
+      <video id="current_video09" muted="muted" onended="this.currentTime = 0; this.play();" src="./CVPR2020/ken_04.mp4" style="height:500px"></video>
     </div>    
     <div class="mySlides fade">
-      <video id="current_video10" controls="controls autoplay" muted="muted" onended="this.currentTime = 0; this.play();" src="./CVPR2020/Real_00.mp4" style="height:500px"></video>
+      <video id="current_video10" muted="muted" onended="this.currentTime = 0; this.play();" src="./CVPR2020/Real_00.mp4" style="height:500px"></video>
     </div>    
     <div class="mySlides fade">
-      <video id="current_video11" controls="controls autoplay" muted="muted" onended="this.currentTime = 0; this.play();" src="./CVPR2020/Real_01.mp4" style="height:500px"></video>
+      <video id="current_video11" muted="muted" onended="this.currentTime = 0; this.play();" src="./CVPR2020/Real_01.mp4" style="height:500px"></video>
     </div>    
     <!-- Next and previous buttons -->
     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -308,6 +308,7 @@
     var i;
     var slides = document.getElementsByClassName("mySlides");
     var dots = document.getElementsByClassName("dot");
+    
     document.getElementById("current_video00").play();
     document.getElementById("current_video01").play();
     document.getElementById("current_video02").play();
