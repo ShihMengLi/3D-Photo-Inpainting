@@ -69,7 +69,7 @@
     <div class="mySlides fade">
       <div class="numbertext">1 / 2</div>
       <!-- <video id="current_video" width="720" controls="controls autoplay" muted="muted" onended="this.currentTime = 0; this.play();" -->
-      <video controls="controls autoplay" muted="muted" onended="this.currentTime = 0; this.play();" src="./CVPR2020/family_00.mp4" data-overlay="1" style="height:500px"></video>
+      <video id="current_video" controls="controls autoplay" muted="muted" onended="this.currentTime = 0; this.play();" src="./CVPR2020/family_00.mp4" data-overlay="1" style="height:500px"></video>
     </div>
     <div class="mySlides fade">
       <div class="numbertext">1 / 2</div>
@@ -310,6 +310,7 @@
 <script src="./asset/bootstrap.min.js"></script>
 <script src="./Ckin-Video-Player/dist/js/ckin.js"></script>
 <script async="" src="./asset/analytics.js"></script>
+<script>document.getElementById("current_video").play();</script>
 <script>
   (function (i, s, o, g, r, a, m) {
       i['GoogleAnalyticsObject'] = r;
