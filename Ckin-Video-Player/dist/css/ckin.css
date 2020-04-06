@@ -35,15 +35,15 @@
 }
 
 .ckin-play:before {
-  content: "\ea1c";
+  content: ""; /* "\ea1c"; */
 }
 
 .ckin-pause:before {
-  content: "\ea1d";
+  content: "";  /* "\ea1d"; */
 }
 
 .ckin-stop:before {
-  content: "\ea1e";
+  content: ""; /* "\ea1e"; */
 }
 
 .ckin-backward:before {
