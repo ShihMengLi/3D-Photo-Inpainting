@@ -92,16 +92,10 @@
       <video id="current_video07" muted="muted" onended="this.currentTime = 0; this.play();" src="./CVPR2020/ken_02.mp4" style="height:500px"></video>
     </div>    
     <div class="mySlides fade">
-      <video id="current_video08" muted="muted" onended="this.currentTime = 0; this.play();" src="./CVPR2020/ken_03.mp4" style="height:500px"></video>
+      <video id="current_video08" muted="muted" onended="this.currentTime = 0; this.play();" src="./CVPR2020/Real_00.mp4" style="height:500px"></video>
     </div>    
     <div class="mySlides fade">
-      <video id="current_video09" muted="muted" onended="this.currentTime = 0; this.play();" src="./CVPR2020/ken_04.mp4" style="height:500px"></video>
-    </div>    
-    <div class="mySlides fade">
-      <video id="current_video10" muted="muted" onended="this.currentTime = 0; this.play();" src="./CVPR2020/Real_00.mp4" style="height:500px"></video>
-    </div>    
-    <div class="mySlides fade">
-      <video id="current_video11" muted="muted" onended="this.currentTime = 0; this.play();" src="./CVPR2020/Real_01.mp4" style="height:500px"></video>
+      <video id="current_video09" muted="muted" onended="this.currentTime = 0; this.play();" src="./CVPR2020/Real_01.mp4" style="height:500px"></video>
     </div>    
     <!-- Next and previous buttons -->
     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -121,8 +115,6 @@
     <span class="dot" onclick="currentSlide(8)"></span>
     <span class="dot" onclick="currentSlide(9)"></span>
     <span class="dot" onclick="currentSlide(10)"></span>
-    <span class="dot" onclick="currentSlide(11)"></span>
-    <span class="dot" onclick="currentSlide(12)"></span>
   </div>
 
   </p>
@@ -344,28 +336,18 @@
     var slides = document.getElementsByClassName("mySlides");
     var dots = document.getElementsByClassName("dot");
     
-    document.getElementById("current_video00").play();
-    document.getElementById("current_video01").play();
-    document.getElementById("current_video02").play();
-    document.getElementById("current_video03").play();
-    document.getElementById("current_video04").play();
-    document.getElementById("current_video05").play();
-    document.getElementById("current_video06").play();
-    document.getElementById("current_video07").play();
-    document.getElementById("current_video08").play();
-    document.getElementById("current_video09").play();
-    document.getElementById("current_video10").play();
-    document.getElementById("current_video11").play();
     if (n > slides.length) {slideIndex = 1}    
     if (n < 1) {slideIndex = slides.length}
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";  
+        document.getElementById("current_video0"+i).pause();
     }
     for (i = 0; i < dots.length; i++) {
         dots[i].className = dots[i].className.replace(" active", "");
     }
     slides[slideIndex-1].style.display = "block";  
     dots[slideIndex-1].className += " active";
+    document.getElementById("current_video0"+(slideIndex-1)).play()
   }
   </script>
 
