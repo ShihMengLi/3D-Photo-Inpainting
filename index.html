@@ -14,6 +14,7 @@
   <link href="./asset/css" rel="stylesheet" type="text/css">
   <link href="./asset/mystyle.css" rel="stylesheet">
   <link href="./Ckin-Video-Player/dist/css/ckin.css" rel="stylesheet"/>
+  <link href="./Ckin-Video-Player/demoDist/demo.css" rel="stylesheet"/>
   <link href="./asset/slideshow.css" rel="stylesheet"/>
 </head>
 
@@ -35,9 +36,9 @@
   <div class="row">
     <h1>3D Photography using Context-aware Layered Depth Inpainting</h1>
     <div class="authors">
-        <a href="https://ShihMengLi.github.io/" target="_blank">Meng-Li Shih</a><sup>1,2</sup>
-        <a href="https://lemonatsu.github.io/" target="_blank">Shih-Yang Su</a><sup>1</sup>
-        <a href="https://johanneskopf.de/" target="_blank">Johannes Kopf</a><sup>3</sup>
+        <a href="https://ShihMengLi.github.io/" target="_blank">Meng-Li Shih</a><sup>1,2</sup>&nbsp;&nbsp;
+        <a href="https://lemonatsu.github.io/" target="_blank">Shih-Yang Su</a><sup>1</sup>&nbsp;&nbsp;
+        <a href="https://johanneskopf.de/" target="_blank">Johannes Kopf</a><sup>3</sup>&nbsp;&nbsp;
         <a href="https://filebox.ece.vt.edu/~jbhuang/" target="_blank">Jia-Bin Huang</a><sup>1</sup>
       <br><br>
 
@@ -140,16 +141,30 @@
 </div>
 
 <div class="container" id="video">
-  <h2>Video Overview</h2>
+  <h2>Video Results</h2>
   <p style="text-align:center;">
-    <iframe height="200" width="400" allowfullscreen="" src="https://www.dropbox.com/s/8p9zioz0zcr3xtw/3DPhoto_Family.mp4?rel=0&raw=1&cc_load_policy=1"></iframe>
-    <iframe height="200" width="400" allowfullscreen="" src="https://www.dropbox.com/s/25z6c60tgi6dg1k/3DPhoto_Legacy.mp4?rel=0&raw=1&cc_load_policy=1"></iframe>
-    <iframe height="200" width="400" allowfullscreen="" src="https://www.dropbox.com/s/s94svckhvnw8ybr/3DPhoto_Parallax.mp4?rel=0&raw=1&cc_load_policy=1"></iframe>
-    <iframe height="200" width="400" allowfullscreen="" src="https://www.dropbox.com/s/eu1d8bbw8wylok9/3DPhoto_RealEstate10K.mp4?rel=0&raw=1&cc_load_policy=1"></iframe>
+  <ul class="demo-list">
+      <li class="demo-list__item">
+        <p>Family Photos</p>
+        <video style="height:30%" src="http://filebox.ece.vt.edu/~jbhuang/project/3DPhoto/3DPhoto_Family.mp4?rel=0&raw=1&cc_load_policy=1"></video>
+      </li>
+      <li class="demo-list__item">
+        <p>Legacy Photos</p>
+        <video style="height:30%" src="http://filebox.ece.vt.edu/~jbhuang/project/3DPhoto/3DPhoto_Legacy.mp4?rel=0&raw=1&cc_load_policy=1"></video>
+      </li>
+      <li class="demo-list__item">
+        <p>2.5D Parallax Effect</p>
+        <video style="height:30%" src="http://filebox.ece.vt.edu/~jbhuang/project/3DPhoto/3DPhoto_Parallax.mp4?rel=0&raw=1&cc_load_policy=1"></video>
+      </li>
+      <li class="demo-list__item">
+        <p>Comparison with State-of-the-art</p>
+        <video style="height:30%" src="http://filebox.ece.vt.edu/~jbhuang/project/3DPhoto/3DPhoto_RealEstate10K.mp4?rel=0&raw=1&cc_load_policy=1"></video>
+      </li>
 
     <!-- <video poster="./Ckin-Video-Player/ckin.jpg" src="./Ckin-Video-Player/ckin.mp4" data-title="The curious case of Chameleon..."></video> -->
     <!--<iframe allowfullscreen frameborder="0" height="400" src="https://www.youtube.com/embed/EJAtOCKI31g"
             width="750"></iframe>-->
+  </ul>
   </p>
 </div>
 
@@ -169,24 +184,24 @@
   <a href="https://drive.google.com/file/d/1ez_jf7PbB5umekqkK9KbMBx2MDmH5-HF/view?usp=sharing">
     <button type="button" class="btn btn-primary">
     <span class="glyphicon glyphicon-save-file" aria-hidden="true">
-    </span>Supplementary Document(PDF)</button>
+    </span>Supplementary Document (PDF)</button>
   </a>
   <a href="https://drive.google.com/file/d/1PL8HTOCjehG1_Xtaf-I7Dm5vd06VdbfG/view?usp=sharing">
     <button type="button" class="btn btn-primary">
     <span class="glyphicon glyphicon-save-file" aria-hidden="true">      
-    </span>Testing Set(RealEstate10K)</button>
+    </span>Testing Set (RealEstate10K)</button>
   </a>
   <a href="https://ShihMengLi.github.io/">
     <button type="button" class="btn btn-primary">
     <span class="glyphicon glyphicon-save-file" aria-hidden="true">      
-    </span>Code(Comming Soon)</button>
+    </span>Code (Comming Soon)</button>
   </a>
 </div>
 
 <div class="container" id="paper">
   <h2>Paper</h2>
   <div>
-    <a href="https://drive.google.com/file/d/17ki_YAL1k5CaHHP3pIBFWvw-ztF4CCPP/view?usp=sharing" target="_blank">3D Photography using Context-aware Layered Depth Inpainting(PDF)</a>
+    <a href="https://drive.google.com/file/d/17ki_YAL1k5CaHHP3pIBFWvw-ztF4CCPP/view?usp=sharing" target="_blank">3D Photography using Context-aware Layered Depth Inpainting (PDF)</a>
   </div>
   <!-- <div>
     <a href="https://ShihMengLi.github.io/" target="_blank">Meng-Li Shih</a>,
@@ -216,10 +231,14 @@
   </a>-->
   <h4> Citation </h4>
   <div>
-        <pre class="citation">@inproceedings{Shih3DP20,
-  author = {Meng-Li Shih, Shih-Yang Su, Johannes Kopf and Jia-Bin Huang},
+  Meng-Li Shih, Shih-Yang Su, Johannes Kopf, and Jia-Bin Huang. "3D Photography using Context-aware Layered Depth Inpainting", in IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2020
+  </div>
+  <h4> Bibtex </h4>
+  <div>
+  <pre class="citation">@inproceedings{Shih3DP20,
+  author = {Shih, Meng-Li and Su, Shih-Yang and Kopf, Johannes and Huang, Jia-Bin},
   title = {3D Photography using Context-aware Layered Depth Inpainting},
-  booktitle = {Proceedings of IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2020},
+  booktitle = {IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2020},
   year = {2020}
 }</pre>
   </div>
